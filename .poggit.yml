@@ -5,4 +5,7 @@ branches:
 projects:
   ItemCore:
     path: ""
+    icon: "1710482.png"
+    lint:
+      phpstan: false
 ...
