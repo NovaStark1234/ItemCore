@@ -6,6 +6,8 @@ use pocketmine\scheduler\Task;
 use ItemCore\Main;
 
 class RepeatTask extends Task {
+
+        public $plugin;
 	
 	/**
 	Construct Main $plugin
@@ -30,7 +32,7 @@ class RepeatTask extends Task {
                         $player->sendTip($text);
                     break;
                     case "popup":
-                        $playet->sendPopup($text);
+                        $player->sendPopup($text);
                     break;
                 }
 			}
