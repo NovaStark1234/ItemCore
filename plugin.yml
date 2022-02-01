@@ -1,0 +1,6 @@
+name: ItemCore
+api: 4.0.0
+version: 2.1.0
+author: NovaStark1245
+main: ItemCore\Main
+description: "Displays the player's coordinates, world name, and direction when they hold an item"
