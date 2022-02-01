@@ -8,6 +8,8 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 
 class Main extends PluginBase {
+
+        public $cfg;
 	
 	/**
 	onEnable() function
@@ -16,8 +18,8 @@ class Main extends PluginBase {
 		$task = new RepeatTask($this);
 		$this->getScheduler()->scheduleRepeatingTask($task, 1);
 		@mkdir($this->getDataFolder());
-        $this->saveResource("config.yml");
-        $this->cfg = new Config($this->getDataFolder() . "config.yml", Config::YAML);
+                $this->saveResource("config.yml");
+                $this->cfg = new Config($this->getDataFolder() . "config.yml", Config::YAML);
 	}
 	
 }
